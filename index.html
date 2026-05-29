@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Complete Guide to Eating and Drinking in Gowanus | The Gowanaut</title>
+<meta name="description" content="Every restaurant, bar, cafe, bakery, and brewery worth your time in Gowanus, Carroll Gardens, Cobble Hill, and Boerum Hill. Updated regularly by The Gowanaut newsletter.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --jade: #2D9E8F;
+  --jade-dark: #1F7269;
+  --jade-mid: #258A7D;
+  --aqua: #5CE0D6;
+  --cream: #FAF7F2;
+  --ink: #1a1a1a;
+  --ink-mid: #444;
+  --ink-light: #777;
+  --rule: #e2ddd6;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--cream); color: var(--ink); font-family: "DM Sans", sans-serif; font-weight: 300; line-height: 1.6; font-size: 16px; }
+
+/* HEADER */
+.site-header { background: var(--jade-dark); padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+.site-logo { color: white; font-family: "Playfair Display", serif; font-size: 18px; font-weight: 700; text-decoration: none; letter-spacing: 0.02em; }
+.site-header-cta { background: white; color: var(--jade-dark); font-size: 13px; font-weight: 600; padding: 7px 16px; border-radius: 100px; text-decoration: none; }
+.site-header-cta:hover { background: var(--aqua); color: white; }
+
+/* HERO */
+.hero { background: linear-gradient(135deg, var(--jade) 0%, var(--jade-dark) 100%); padding: 64px 24px 56px; text-align: center; }
+.hero-eyebrow { color: rgba(255,255,255,0.7); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 16px; }
+.hero h1 { font-family: "Playfair Display", serif; font-size: clamp(28px, 5vw, 48px); font-weight: 900; color: white; line-height: 1.15; max-width: 800px; margin: 0 auto 20px; }
+.hero-sub { color: rgba(255,255,255,0.85); font-size: 17px; font-weight: 300; max-width: 600px; margin: 0 auto 32px; }
+.hero-meta { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+.hero-meta-item { color: rgba(255,255,255,0.75); font-size: 14px; }
+.hero-meta-item strong { color: white; font-weight: 600; }
+
+/* SUBSCRIBE BANNER */
+.subscribe-banner { background: #1a1a1a; padding: 16px 24px; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.subscribe-banner p { color: rgba(255,255,255,0.75); font-size: 14px; font-weight: 300; }
+.subscribe-banner strong { color: white; font-weight: 600; }
+.subscribe-btn { background: var(--jade); color: white; font-size: 13px; font-weight: 600; padding: 8px 20px; border-radius: 100px; text-decoration: none; white-space: nowrap; }
+.subscribe-btn:hover { background: var(--aqua); }
+
+/* NAV */
+.section-nav { background: white; border-bottom: 1px solid var(--rule); padding: 0; position: sticky; top: 45px; z-index: 90; overflow-x: auto; }
+.section-nav-inner { display: flex; gap: 0; padding: 0 16px; white-space: nowrap; min-width: max-content; }
+.section-nav a { display: inline-block; padding: 14px 14px; font-size: 13px; font-weight: 500; color: var(--ink-mid); text-decoration: none; border-bottom: 2px solid transparent; transition: color 0.2s, border-color 0.2s; }
+.section-nav a:hover { color: var(--jade); border-bottom-color: var(--jade); }
+
+/* MAIN */
+.main { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+
+/* GUIDE INTRO */
+.guide-intro { background: white; border: 1px solid var(--rule); border-left: 4px solid var(--jade); border-radius: 0 8px 8px 0; padding: 24px 28px; margin-bottom: 48px; }
+.guide-intro p { font-size: 15px; color: var(--ink-mid); line-height: 1.7; }
+.guide-intro p + p { margin-top: 10px; }
+.guide-intro a { color: var(--jade); font-weight: 500; }
+
+/* SECTION */
+.section { margin-bottom: 64px; }
+.section-header { display: flex; align-items: baseline; gap: 12px; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--jade); }
+.section-title { font-family: "Playfair Display", serif; font-size: 26px; font-weight: 700; color: var(--jade-dark); }
+.section-count { background: var(--jade); color: white; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 100px; }
+.section-subtitle { color: var(--ink-light); font-size: 14px; font-weight: 300; margin-top: 4px; }
+
+/* PICKS */
+.picks-header { flex-direction: column; align-items: flex-start; }
+.picks-header .section-title { color: var(--jade-dark); }
+.picks-category { margin-bottom: 28px; }
+.picks-cat-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 12px; }
+.picks-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+.pick-card { background: white; border: 1px solid var(--rule); border-radius: 10px; padding: 16px; text-decoration: none; color: inherit; display: block; transition: border-color 0.2s, box-shadow 0.2s; position: relative; overflow: hidden; }
+.pick-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--jade), var(--aqua)); }
+.pick-card:hover { border-color: var(--jade); box-shadow: 0 4px 12px rgba(45,158,143,0.12); }
+.pick-card-star { color: var(--jade); font-size: 18px; margin-bottom: 8px; }
+.pick-card-name { font-weight: 600; font-size: 14px; color: var(--ink); margin-bottom: 4px; line-height: 1.3; }
+.pick-card-addr { font-size: 12px; color: var(--ink-light); margin-bottom: 8px; }
+.pick-card-blurb { font-size: 12px; color: var(--ink-mid); line-height: 1.5; font-weight: 300; }
+
+/* VENUE LIST */
+.venue-list { display: flex; flex-direction: column; gap: 0; }
+.section { scroll-margin-top: 105px; }
+.venue-card { padding: 18px 0; border-bottom: 1px solid var(--rule); }
+.venue-card:last-child { border-bottom: none; }
+.venue-card.pick { background: linear-gradient(to right, rgba(92,224,214,0.06), transparent); border-radius: 6px; padding: 18px 12px; margin: 0 -12px; }
+.venue-card.coming-soon { opacity: 0.85; }
+.venue-header { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 4px; }
+.venue-name { font-size: 16px; font-weight: 600; color: var(--ink); }
+.venue-name-link { color: var(--jade); text-decoration: none; font-weight: 600; }
+.venue-name-link:hover { color: var(--jade); text-decoration: underline; }
+.pick-star { color: var(--jade); font-size: 15px; }
+.venue-meta { font-size: 13px; color: var(--ink-light); margin-bottom: 4px; }
+.venue-address { font-size: 13px; margin-bottom: 3px; }
+.venue-addr { color: var(--ink-light); text-decoration: none; }
+.venue-addr:hover { color: var(--jade); text-decoration: underline; }
+.venue-addr-plain { color: var(--ink-light); }
+.venue-rating-line { font-size: 13px; margin-bottom: 3px; }
+.venue-rating { color: var(--jade); font-weight: 600; }
+.venue-hours { font-size: 12px; color: var(--ink-light); margin-bottom: 4px; }
+.venue-desc { font-size: 14px; color: var(--ink-mid); line-height: 1.6; font-weight: 300; }
+.tag { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 2px 8px; border-radius: 100px; }
+.tag-open { background: #e8f9e8; color: #2a7a2a; }
+.tag-coming { background: #fff4e0; color: #b06000; }
+.tag-soft { background: #e8f0ff; color: #4060b0; }
+
+/* CTA */
+.cta-section { background: linear-gradient(135deg, var(--jade) 0%, var(--jade-dark) 100%); border-radius: 16px; padding: 48px 40px; text-align: center; margin-top: 64px; }
+.cta-section h2 { font-family: "Playfair Display", serif; font-size: 28px; font-weight: 700; color: white; margin-bottom: 12px; }
+.cta-section p { color: rgba(255,255,255,0.85); font-size: 15px; max-width: 480px; margin: 0 auto 28px; font-weight: 300; }
+.cta-btn { display: inline-block; background: white; color: var(--jade-dark); font-size: 15px; font-weight: 600; padding: 14px 32px; border-radius: 100px; text-decoration: none; }
+.cta-btn:hover { background: var(--aqua); color: white; }
+
+/* FOOTER */
+.site-footer { background: var(--ink); padding: 32px 24px; text-align: center; margin-top: 64px; }
+.site-footer p { color: rgba(255,255,255,0.4); font-size: 12px; }
+.site-footer a { color: rgba(255,255,255,0.6); text-decoration: none; }
+
+@media (max-width: 600px) {
+  .hero { padding: 48px 20px 40px; }
+  .main { padding: 32px 16px 64px; }
+  .picks-grid { grid-template-columns: 1fr 1fr; }
+  .cta-section { padding: 36px 24px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="https://thegowanaut.com" class="site-logo">The Gowanaut</a>
+  <a href="https://thegowanaut.com" class="site-header-cta">Subscribe Free</a>
+</header>
+
+<div class="hero">
+  <div class="hero-eyebrow">The Gowanaut &middot; Neighborhood Guide</div>
+  <h1>The Complete Guide to Eating and Drinking in Gowanus</h1>
+  <p class="hero-sub">Every restaurant, bar, cafe, bakery, and brewery worth your time in one of Brooklyn&rsquo;s most interesting neighborhoods.</p>
+  <div class="hero-meta">
+    <div class="hero-meta-item"><strong>199+</strong> venues</div>
+    <div class="hero-meta-item"><strong>10</strong> categories</div>
+    <div class="hero-meta-item">Updated <strong>May 2026</strong></div>
+    <div class="hero-meta-item">Google ratings included</div>
+  </div>
+</div>
+
+<div class="subscribe-banner">
+  <p><strong>The Gowanaut</strong> covers every opening, closing, and notable change in Gowanus every Saturday.</p>
+  <a href="https://thegowanaut.com" class="subscribe-btn">Subscribe Free &rarr;</a>
+</div>
+
+<nav class="section-nav" aria-label="Jump to section">
+  <div class="section-nav-inner">
+    <a href="#picks">&#9733; Picks</a>
+    <a href="#restaurants">Restaurants</a>
+    <a href="#pizza">Pizza</a>
+    <a href="#wine-bars">Wine Bars</a>
+    <a href="#bars">Bars</a>
+    <a href="#breweries">Breweries</a>
+    <a href="#coffee">Coffee</a>
+    <a href="#bakeries">Bakeries</a>
+    <a href="#wine-shops">Wine Shops</a>
+    <a href="#specialty">Specialty</a>
+  </div>
+</nav>
+
+<main class="main">
+
+<div class="guide-intro">
+  <p>Gowanus is in the middle of one of the biggest reinventions in Brooklyn&rsquo;s recent history. New buildings are going up, new residents are moving in, and new restaurants are opening every few months. But the neighborhood has always had a serious food scene, anchored by places that have been here for years and know exactly what they&rsquo;re doing.</p>
+  <p>This guide covers the whole ecosystem: Gowanus proper plus the surrounding blocks of Carroll Gardens, Cobble Hill, Boerum Hill, and Park Slope. All ratings are current Google ratings at time of publication. &ldquo;Coming Soon&rdquo; entries are tracked as they approach opening. We publish a <a href="https://thegowanaut.com">free weekly newsletter</a> covering every opening, closing, and notable change the week it happens.</p>
+  <p style="margin-top:10px;">Own a spot we missed? <a href="mailto:thegowanaut@gmail.com">Email us at thegowanaut@gmail.com</a> and we'll take a look.</p>
+</div>
+
+<section id="picks" class="section">
+<div class="section-header picks-header">
+<h2 class="section-title">★ The Gowanaut Picks</h2>
+<p class="section-subtitle">New to the neighborhood? Start here — the essential stops, the classics, the places that make Gowanus worth knowing about.</p>
+</div>
+<div class="picks-category"><div class="picks-cat-label">Restaurants</div>
+<div class="picks-grid">
+<a class="pick-card" href="https://www.frankiesspuntino.com" target="_blank" rel="noopener">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">Frankies 457 Spuntino</div>
+<div class="pick-card-addr">457 Court Street</div>
+<div class="pick-card-blurb">The Carroll Gardens Italian institution. Buzzy, relaxed, always excellent.</div>
+</a>
+<a class="pick-card" href="https://www.instagram.com/hungrythirstybk" target="_blank" rel="noopener">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">Hungry Thirsty</div>
+<div class="pick-card-addr">407 Smith Street</div>
+<div class="pick-card-blurb">Michelin-cited southern Thai. The curries and branzino are the moves.</div>
+</a>
+<a class="pick-card" href="https://clarobk.com" target="_blank" rel="noopener">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">Claro</div>
+<div class="pick-card-addr">284 3rd Avenue</div>
+<div class="pick-card-blurb">Gowanus&#x27;s only Michelin-starred restaurant. Oaxacan, stone-ground masa, wood-burning hearth. One of the best restaurants in Brooklyn.</div>
+</a>
+</div></div>
+<div class="picks-category"><div class="picks-cat-label">Pizza</div>
+<div class="picks-grid">
+<a class="pick-card" href="https://www.lucali.com" target="_blank" rel="noopener">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">Lucali</div>
+<div class="pick-card-addr">575 Henry Street</div>
+<div class="pick-card-blurb">The thin-crust Brooklyn institution. No reservations, BYO wine, worth every minute of the wait.</div>
+</a>
+<a class="pick-card" href="https://www.fnfpizzeria.com" target="_blank" rel="noopener">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">F&amp;F Pizzeria</div>
+<div class="pick-card-addr">459 Court Street</div>
+<div class="pick-card-blurb">Developed with Chris Bianco. The clam pie alone is worth an afternoon.</div>
+</a>
+<a class="pick-card" href="https://table87.com" target="_blank" rel="noopener">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">Table 87</div>
+<div class="pick-card-addr">87 Atlantic Avenue</div>
+<div class="pick-card-blurb">Coal-oven Margherita by the slice. One of the best slices in Brooklyn.</div>
+</a>
+</div></div>
+<div class="picks-category"><div class="picks-cat-label">Bars</div>
+<div class="picks-grid">
+<a class="pick-card" href="https://www.instagram.com/canalbarbklyn/" target="_blank" rel="noopener">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">Canal Bar</div>
+<div class="pick-card-addr">270 3rd Avenue</div>
+<div class="pick-card-blurb">The oldest bar in Gowanus, open since 2005. Pool table, vintage jukebox, $5 beer, 4am close.</div>
+</a>
+<a class="pick-card" href="https://www.bargreatharry.com" target="_blank" rel="noopener">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">Bar Great Harry</div>
+<div class="pick-card-addr">280 Smith Street</div>
+<div class="pick-card-blurb">Smith Street&#x27;s craft beer bar since 2007. 20 rotating taps, five lines of wine, bartenders who know their stuff.</div>
+</a>
+<div class="pick-card">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">The Brooklyn Inn</div>
+<div class="pick-card-addr">148 Hoyt Street</div>
+<div class="pick-card-blurb">140 years, no website, no TVs. Carved wood bar, pressed tin ceiling, pool table in the back.</div>
+</div>
+</div></div>
+<div class="picks-category"><div class="picks-cat-label">Breweries</div>
+<div class="picks-grid">
+<a class="pick-card" href="https://otherhalfbrewing.com" target="_blank" rel="noopener">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">Other Half Brewing</div>
+<div class="pick-card-addr">195 Centre Street</div>
+<div class="pick-card-blurb">One of the most lauded craft breweries in New York. The hazy IPAs are the calling card.</div>
+</a>
+<a class="pick-card" href="https://finbackbrewery.com" target="_blank" rel="noopener">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">Finback Brewery</div>
+<div class="pick-card-addr">545 President Street</div>
+<div class="pick-card-blurb">Brewery, taproom, restaurant, and retail under one roof. The kitchen competes with the beer.</div>
+</a>
+<a class="pick-card" href="https://threesbrewing.com" target="_blank" rel="noopener">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">Threes Brewing</div>
+<div class="pick-card-addr">333 Douglass Street</div>
+<div class="pick-card-blurb">The neighborhood living room. Great beer, great food, great backyard, great jukebox.</div>
+</a>
+</div></div>
+<div class="picks-category"><div class="picks-cat-label">Bakeries</div>
+<div class="picks-grid">
+<a class="pick-card" href="https://birdsblack.com" target="_blank" rel="noopener">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">Four &amp; Twenty Blackbirds</div>
+<div class="pick-card-addr">439 3rd Avenue</div>
+<div class="pick-card-blurb">South Dakota family recipes, fifteen years at 3rd and 8th. The Salted Caramel Apple is a legend.</div>
+</a>
+<a class="pick-card" href="https://labicyclettebakery.com" target="_blank" rel="noopener">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">La Bicyclette Bakery</div>
+<div class="pick-card-addr">305 Court Street</div>
+<div class="pick-card-blurb">French bakery on Court Street. Real croissants, baguettes, quiches, warm staff.</div>
+</a>
+<a class="pick-card" href="https://miasbrooklyn.com/" target="_blank" rel="noopener">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">Mia&#x27;s Brooklyn Bakery</div>
+<div class="pick-card-addr">271 5th Avenue</div>
+<div class="pick-card-blurb">Neighborhood bakery with strong ratings and devoted regulars.</div>
+</a>
+<a class="pick-card" href="https://www.instagram.com/monteleonesbakery355/" target="_blank" rel="noopener">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">Pasticceria Monteleone BK</div>
+<div class="pick-card-addr">355 Court Street</div>
+<div class="pick-card-blurb">Neapolitan pastry shop on Court Street. Old-world technique, excellent sfogliatelle.</div>
+</a>
+</div></div>
+<div class="picks-category"><div class="picks-cat-label">Coffee</div>
+<div class="picks-grid">
+<a class="pick-card" href="https://brooklynhabit.com" target="_blank" rel="noopener">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">Brooklyn Habit</div>
+<div class="pick-card-addr">405 Smith Street</div>
+<div class="pick-card-blurb">LaColombe coffee, great pastries, and a calm vibe built for reading a book or getting work done.</div>
+</a>
+<a class="pick-card" href="https://www.longshadowcoffee.com/" target="_blank" rel="noopener">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">Long Shadow Coffee</div>
+<div class="pick-card-addr">543 3rd Avenue</div>
+<div class="pick-card-blurb">5.0-star specialty coffee on 3rd Avenue. Perfect rating, consistent reviews.</div>
+</a>
+<a class="pick-card" href="https://www.instagram.com/lovedonescoffee" target="_blank" rel="noopener">
+<div class="pick-card-star">★</div>
+<div class="pick-card-name">Loved Ones Coffee</div>
+<div class="pick-card-addr">253 Bergen Street</div>
+<div class="pick-card-blurb">Family-run cafe where owner Zane roasts his own beans in-house. 4.9 stars and the kind of hospitality that keeps people coming back.</div>
+</a>
+</div></div>
+</section>
+<section id="restaurants" class="section">
+<div class="section-header"><h2 class="section-title">Restaurants</h2><span class="section-count">66</span></div>
+<div class="venue-list">
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://532court.com" class="venue-name-link" target="_blank" rel="noopener">532 Court Restaurant</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=532%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">532 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">5.0★</span></div><div class="venue-hours">Opens 5pm Thu</div><p class="venue-desc">Top-tier food, ambience, and service. A newer entry on Court Street with a perfect early rating.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.cafeluluc.net/" class="venue-name-link" target="_blank" rel="noopener">Cafe Luluc</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=214%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">214 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.3★</span></div><div class="venue-hours">Wed–Mon, cash only</div><p class="venue-desc">Cash-only French brunch spot on Smith Street for over 20 years. The pancakes are enormous, cloudlike, and on every neighborhood best-of list for good reason. 1,672 reviews for a small room that doesn&#x27;t take cards is about as clear an endorsement as this neighborhood produces.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.albadawinyc.com" class="venue-name-link" target="_blank" rel="noopener">al Badawi</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=151%20Atlantic%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">151 Atlantic Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens 11am, closes 10pm</div><p class="venue-desc">Middle Eastern casual eatery on Atlantic Avenue. Delicious food, great atmosphere, and friendly staff across a very large and consistent review base.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/almanegra.nyc/" class="venue-name-link" target="_blank" rel="noopener">Alma Negra</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=494%204th%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">494 4th Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens 5pm Wed–Sun</div><p class="venue-desc">Mexican restaurant on the South Slope/Gowanus border with creative cocktails that reviewers keep mentioning alongside the food. The kind of place where the drinks are as much a reason to go as the menu.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/avleegk/" class="venue-name-link" target="_blank" rel="noopener">Avlee Greek Kitchen</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=349%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">349 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens noon</div><p class="venue-desc">Mediterranean spot for gyros and souvlaki on Smith Street. Consistently strong reviews on food, service, and atmosphere.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://babaspierogies.com" class="venue-name-link" target="_blank" rel="noopener">Baba&#x27;s Pierogies</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=295%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">295 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Open daily</div><p class="venue-desc">A Gowanus staple. Bright, casual, and exactly what it sounds like: great pierogies in a neighborhood that has always had more bars than restaurants. The menu is bigger than you&#x27;d expect, but the pierogies are what people come back for.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.barbete.com" class="venue-name-link" target="_blank" rel="noopener">Bar Bête</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=263%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">263 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 5:30pm Wed</div><p class="venue-desc">Stylish French-Canadian bistro on Smith Street. Cool vibe, interesting wine list, and great decor. One of the more distinctive dining rooms on the corridor.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.barferdinando.com" class="venue-name-link" target="_blank" rel="noopener">Bar Ferdinando</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=151%20Union%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">151 Union Street</a></div><p class="venue-desc">Opened spring 2026 in the former Ferdinando&#x27;s Focacceria space on Union Street, a spot that locals knew well. The new restaurant honors the site&#x27;s Sicilian roots with panelle, arancini, and classic Italian fare alongside an amaro-forward cocktail program, and preserved original artwork and fixtures from the historic space.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/barbrunobk" class="venue-name-link" target="_blank" rel="noopener">Bar Bruno</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=520%20Henry%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">520 Henry Street</a></div><p class="venue-desc">Henry Street neighborhood bar and restaurant under new ownership as of 2026 with a new Oaxacan chef in the kitchen. A neighborhood restaurant getting a serious kitchen upgrade is a good development.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/barbalu.nyc" class="venue-name-link" target="_blank" rel="noopener">Barbalu</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=68%20Bergen%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">68 Bergen Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><p class="venue-desc">Intimate Italian restaurant on the Cobble Hill edge of Bergen Street. Small, warm, and focused on doing simple things well. The kind of place people defend aggressively when someone asks where to eat.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.barsanmiguelbk.com" class="venue-name-link" target="_blank" rel="noopener">Bar San Miguel</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=307%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">307 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Open daily, closes 10:30pm</div><p class="venue-desc">Mexican tapas and craft cocktails on Smith Street. The food is creative and the mezcal cocktails are genuinely good. One of the better spots on the corridor for a drinks-forward dinner.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.bartabacny.com" class="venue-name-link" target="_blank" rel="noopener">Bar Tabac</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=128%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">128 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.3★</span></div><div class="venue-hours">Open daily for lunch and dinner</div><p class="venue-desc">French bistro on Smith Street open since 2002. Steak frites, moules mariniere, good cocktails, live music on select nights. One of the older survivors on a street that has seen dozens of openings and closings around it.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://bigtinybk.com" class="venue-name-link" target="_blank" rel="noopener">BIGTINY</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=244%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">244 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens 5pm Wed</div><p class="venue-desc">Lively French bistro on Smith Street in a warm setting. Amazing vibe, delicious food, and a wine selection that earns consistent praise. A proper bistro with real energy.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.bisonandbourbon.com" class="venue-name-link" target="_blank" rel="noopener">Bison &amp; Bourbon</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=191%207th%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">191 7th Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Open daily, closes 10:30pm</div><p class="venue-desc">Kosher steakhouse with cocktails and a huge patio. Upscale feel, strong reviews across the board. One of the more distinctive options in the neighborhood for a special occasion dinner.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.blackforestbrooklyn.com" class="venue-name-link" target="_blank" rel="noopener">Black Forest Brooklyn</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=181%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">181 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Opens 3pm Wed–Fri, noon Sat–Sun</div><p class="venue-desc">Casual German eatery and beer garden on lower Smith Street. The beer selection is exceptional and the food backs it up. A good option for a long, easy afternoon when the weather cooperates.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/breakhousebk/" class="venue-name-link" target="_blank" rel="noopener">BreakHouse Cafe</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=536%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">536 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Opens 6am</div><p class="venue-desc">Breakfast and sandwiches on 3rd Avenue, open early. Simple, well-executed, and consistently praised. A solid option for an early start or a quick lunch.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.breakfastbysaltscure.com" class="venue-name-link" target="_blank" rel="noopener">Breakfast by Salt&#x27;s Cure</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=368%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">368 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Opens 8am</div><p class="venue-desc">Diner on Court Street with standout banana pancakes and hash browns. A solid breakfast and brunch option in Carroll Gardens.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://cafemarsnyc.com" class="venue-name-link" target="_blank" rel="noopener">Cafe Mars</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=272%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">272 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 5:30pm Wed</div><p class="venue-desc">Italian-ish, neighborhood-ish, with a bar program that punches above its weight. They run seasonal pop-ups and collaborations — the Itameshi series (Italian-Japanese fusion) got enough attention to become a recurring thing. A genuinely fun place for dinner or a late glass of wine.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.cafespaghetti.com" class="venue-name-link" target="_blank" rel="noopener">Cafe Spaghetti</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=126%20Union%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">126 Union Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens 5pm Wed</div><p class="venue-desc">Italian restaurant on Union Street earning a strong following. The breakfast spaghetti and well-balanced cocktails are the signature draws. An interesting entry in the neighborhood Italian category.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.cobblehillcoffeeshopny.com/" class="venue-name-link" target="_blank" rel="noopener">Cobble Hill Coffee Shop</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=314%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">314 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.1★</span></div><p class="venue-desc">A diner. Counter stools, eggs any way, coffee refills, no reservations, no apps. In a neighborhood this deep into fine dining and small plates, that is not nothing. Sometimes you just want breakfast.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://clarobk.com" class="venue-name-link" target="_blank" rel="noopener">Claro</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=284%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">284 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.2★</span></div><div class="venue-hours">Sun–Thu 5:30–10:30pm, Fri–Sat 5:30–11:30pm, Brunch Sat–Sun 11:30am–3pm</div><p class="venue-desc">The anchor of Gowanus dining. Chef T.J. Steele opened this Oaxacan restaurant in 2017 and earned the neighborhood&#x27;s first Michelin star. The star has come and gone, but the food has not. House-ground masa, fire-grilled tortillas, and a back patio with a wood-burning hearth that makes summer dinners feel genuinely transporting. Get the tostadas. Come back.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.thecommonbrooklyn.com/" class="venue-name-link" target="_blank" rel="noopener">The Common</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=548%204th%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">548 4th Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens 8am</div><p class="venue-desc">All-day restaurant on 4th Avenue with a comfortable, laid-back feel and consistently delicious food. Breakfast through dinner.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/cotra_japanesebar/" class="venue-name-link" target="_blank" rel="noopener">Cotra</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=451%20Carroll%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">451 Carroll Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens 5pm Wed</div><p class="venue-desc">Japanese restaurant in the old Monte&#x27;s space, keeping the pizza oven and using it for its own purposes. Elegantly presented food and drinks in an interesting space. Come for a casual date night with a carafe of sake by candlelight.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://creminis.com/" class="venue-name-link" target="_blank" rel="noopener">Cremini&#x27;s</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=521%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">521 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><p class="venue-desc">Husband-and-wife restaurant specializing in Le Marche regional Italian, a coastal region between Tuscany and the Adriatic almost never represented in New York City. That specificity, combined with a 4.9 rating on over 400 reviews, means something. One of the most distinctive Italian restaurants on a Court Street block that has no shortage of them.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://daigobrooklyn.com" class="venue-name-link" target="_blank" rel="noopener">Daigo Sushi Roll Bar</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=527%20Carroll%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">527 Carroll Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens noon</div><p class="venue-desc">Cozy sushi spot focusing on seafood and vegetable rolls. Great food, great atmosphere, excellent service. A neighborhood sushi option that holds up to close inspection.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://emmastorch.org" class="venue-name-link" target="_blank" rel="noopener">Emma&#x27;s Torch Cafe</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=345%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">345 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 7am</div><p class="venue-desc">Seasonal New American on Smith Street with a social mission: Emma&#x27;s Torch trains and employs refugees and asylum seekers. Great food, awesome staff, right prices. Worth knowing about for a reason beyond the menu.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.fragolenyc.com" class="venue-name-link" target="_blank" rel="noopener">Fragole</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=394%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">394 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Opens 2:30pm Wed</div><p class="venue-desc">Italian restaurant on Court Street with an intimate ambiance, friendly staff, and a wine list worth exploring. One of the more charming spots on the Carroll Gardens dining circuit.</p>
+  </div>
+  <div class="venue-card pick">
+    <div class="venue-header"><h3 class="venue-name"><span class="pick-star">★</span> <a href="https://www.frankiesspuntino.com" class="venue-name-link" target="_blank" rel="noopener">Frankies 457 Spuntino</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=457%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">457 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Opens 11am Wed</div><p class="venue-desc">One of Carroll Gardens&#x27; most beloved neighborhood Italian restaurants. Buzzy, relaxed, and consistently excellent. The cavatelli with hot sausage and browned sage butter is a signature. A genuine institution on Court Street.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.gersirestaurant.com/" class="venue-name-link" target="_blank" rel="noopener">Gersi Restaurant Brooklyn</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=316%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">316 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Opens 4pm Wed</div><p class="venue-desc">Housemade pastas and Italian fare on Court Street. Fresh food, nice wine and drink offerings. A solid neighborhood Italian.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://guacamolebrooklyn.com/" class="venue-name-link" target="_blank" rel="noopener">Guacamole Brooklyn</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=250%204th%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">250 4th Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Opens 10:30am</div><p class="venue-desc">Mexican restaurant on 4th Avenue with a cool space and on-point food. The owner has a following. A solid neighborhood Mexican option.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://insabrooklyn.com" class="venue-name-link" target="_blank" rel="noopener">Insa</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=328%20Douglass%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">328 Douglass Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.3★</span></div><div class="venue-hours">Opens 5:30pm</div><p class="venue-desc">Korean BBQ and karaoke under one roof, and it works. Grill high-quality meat at the table, eat kimchi fried rice and tteokbokki, and then disappear into one of the private karaoke rooms for several more hours. Gowanus&#x27;s go-to for groups and special occasions.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.karazishibotan.com" class="venue-name-link" target="_blank" rel="noopener">Karazishi Botan</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=255%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">255 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 5:30pm</div><p class="venue-desc">Creative ramen bowls on Smith Street. The food is excellent and the staff is warm and welcoming. One of the more interesting ramen options in this part of Brooklyn.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/kiosko787/" class="venue-name-link" target="_blank" rel="noopener">Kiosko 787</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=488%20Carroll%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">488 Carroll Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.2★</span></div><div class="venue-hours">Opens noon</div><p class="venue-desc">Puerto Rican restaurant with genuine chef-driven food. The pernil and guava empanadillas are worth the trip. Chef Gabriel&#x27;s presentation gets consistent attention in the reviews.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.levantonsmith.com" class="venue-name-link" target="_blank" rel="noopener">Levant on Smith</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=223%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">223 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Open daily, closes 11pm</div><p class="venue-desc">French restaurant and wine bar on Smith Street with impeccable service, amazing food, and a spectacular wine selection. The french omelet is a highlight. One of the better dining options on the corridor.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.thelongislandbar.com" class="venue-name-link" target="_blank" rel="noopener">The Long Island Bar</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=110%20Atlantic%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">110 Atlantic Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Open daily, closes midnight</div><p class="venue-desc">Cocktail bar and restaurant on Atlantic Avenue in a restored 1950s diner. The burgers and bar food are the point, and the cocktails are excellent. A Boerum Hill institution that rewards knowing about it.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://lonniesnyc.com" class="venue-name-link" target="_blank" rel="noopener">Lonnies</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=112%20Bond%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">112 Bond Street</a></div><p class="venue-desc">From Sean Rembold and Caron Callahan, the couple behind Ingas Bar in Brooklyn Heights. Named after Lonnie Lanham, a Vietnam veteran-turned-hairdresser who embodied complete freedom. The menu follows the same logic, built around whatever&#x27;s fresh and fun. One of the most anticipated Bond Street openings of 2026.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/liarliarbk/" class="venue-name-link" target="_blank" rel="noopener">Liar Liar</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=285%20Nevins%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">285 Nevins Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Open daily, closes midnight</div><p class="venue-desc">From the team behind Bad Luck Bar. Natural wine, steak frites au poivre, a small room with strong opinions about what it wants to be. It turned one in early 2026 with zero signs of slowing down. Make a reservation.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://luosburgers.com/" class="venue-name-link" target="_blank" rel="noopener">Luo&#x27;s Burgers</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=568%204th%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">568 4th Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens 11am, closes 10pm</div><p class="venue-desc">Burger spot on 4th Avenue with a great menu, fair pricing, and excellent service. One of the better burger options in the area.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.marcopoloristorante.com" class="venue-name-link" target="_blank" rel="noopener">Marco Polo</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=345%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">345 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens noon Wed</div><p class="venue-desc">A Court Street classic that has been feeding Carroll Gardens for decades. Fireplace, attentive service, and a warm room. The kind of Italian restaurant that exists because the neighborhood actually needs it, not because a hospitality group decided it should.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://malvannyc.com" class="venue-name-link" target="_blank" rel="noopener">Malvan</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=550%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">550 Court Street</a></div><p class="venue-desc">Coastal Indian restaurant from Chef Eric McCarthy, who also runs Indian Table further up Court Street. Malvan specializes in the cuisine of India&#x27;s western Malvan coast — heavily seafood-forward, built around coconut, tamarind, and long-simmered spice blends. Start with the jumbo lump crab samosas.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.mightyquinnsbbq.com" class="venue-name-link" target="_blank" rel="noopener">Mighty Quinn&#x27;s Barbeque</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=433%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">433 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Opens 11:30am</div><p class="venue-desc">Counter-serve BBQ on 3rd Avenue. The brisket and mac and cheese are the highlights. A useful option for a quick, well-executed lunch on the corridor.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://nenestaqueriausa.com/" class="venue-name-link" target="_blank" rel="noopener">Nene&#x27;s Taqueria</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=Nene%27s%20Taqueria%20Gowanus%20Brooklyn%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">Gowanus</a></div><div class="venue-hours">Check hours on Google</div><p class="venue-desc">The Gowanus outpost of the Bushwick taqueria: same tacos, less wait, more organized. Birria, al pastor, the works. Good for a quick lunch or an early dinner.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.radisabrooklyn.com" class="venue-name-link" target="_blank" rel="noopener">Osteria Radisa</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=241%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">241 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 5pm Wed</div><p class="venue-desc">Restaurant on Smith Street with a great wine selection and pleasant ambiance. The eggs Benedict at brunch gets consistent attention. A versatile spot for dinner or a weekend morning.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.palosantorestaurant.com" class="venue-name-link" target="_blank" rel="noopener">Palo Santo</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=652%20Union%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">652 Union Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 6pm Wed</div><p class="venue-desc">Pan-Latin fare in a Carroll Gardens townhouse. Creative, delicious, and always well prepared. The townhouse setting makes it feel like a special occasion without requiring one.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/parklifebk/" class="venue-name-link" target="_blank" rel="noopener">Parklife</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=636%20Degraw%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">636 Degraw Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.2★</span></div><div class="venue-hours">Open daily, closes midnight</div><p class="venue-desc">A 4,000 square foot landscaped front yard, heated outdoor solariums, and a taqueria run by the team behind El Atoradero. The house mezcarita is the drink to get. One of the better warm-weather destinations in the neighborhood.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.popinanyc.com" class="venue-name-link" target="_blank" rel="noopener">Popina</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=127%20Columbia%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">127 Columbia Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 5pm Wed</div><p class="venue-desc">Italian cooking with Southern accents and a great wine list on Columbia Street near the Red Hook border. Super friendly staff and an interesting menu that isn&#x27;t doing the same thing as everyone else on Smith Street.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.pdapizza.com/" class="venue-name-link" target="_blank" rel="noopener">Public Display of Affection</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=669%20Union%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">669 Union Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Opens 5pm, closes 10pm</div><p class="venue-desc">Hip joint for creative pizzas and salads. Covered outdoor seating out front. A Gowanus pizza option with actual personality.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://reyesdelibk.com/" class="venue-name-link" target="_blank" rel="noopener">Reyes Deli &amp; Grocery</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=Reyes%20Deli%20Grocery%20Gowanus%20Brooklyn%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">Park Slope/Gowanus border</a></div><div class="venue-hours">Open daily</div><p class="venue-desc">A deli on the Gowanus/Park Slope border making some of the best tacos in the area. The kind of spot locals know about and visitors walk right past. Worth hunting down.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.ruathai.com" class="venue-name-link" target="_blank" rel="noopener">RUA Thai</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=204%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">204 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><div class="venue-hours">Open daily, closes 10:30pm</div><p class="venue-desc">Exceptional Thai restaurant on Smith Street. Outstanding food and a relaxed atmosphere across a very large and consistent review base. One of the highest-rated restaurants in the entire area.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://runnerandstone.com" class="venue-name-link" target="_blank" rel="noopener">Runner &amp; Stone</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=285%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">285 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Open daily</div><p class="venue-desc">Thirteen years on 3rd Avenue, which in Gowanus terms makes Runner &amp; Stone practically a founding institution. Half bakery, half restaurant, entirely worth your time. The bread program supplies Whole Foods, the Park Slope Food Coop, and Olmsted. Come for a sandwich at lunch and come back for dinner.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://rucolabk.com" class="venue-name-link" target="_blank" rel="noopener">Rucola</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=190%20Dean%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">190 Dean Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Dinner nightly, brunch Sat–Sun</div><p class="venue-desc">Rustic Italian in a narrow, candlelit Boerum Hill townhouse that has been a neighborhood institution for over a decade. Handmade pasta, communal tables, a short menu that changes with the season. A genuine omission from any list of the area&#x27;s best restaurants.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><span class="venue-name-plain">Sam&#x27;s Restaurant</span></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=238%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">238 Court Street</a></div><div class="venue-hours">Open daily</div><p class="venue-desc">Sam&#x27;s has been a Carroll Gardens institution for decades, serving old-school red-sauce Italian to a neighborhood that remembers when this whole area was solidly Italian-American. Under new ownership as of 2026, taking care to preserve that continuity.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/savelli_brooklyn/" class="venue-name-link" target="_blank" rel="noopener">Savelli</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=195%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">195 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Open daily, closes 10:30pm</div><p class="venue-desc">Distinctive Italian venue on Smith Street with cocktails and a lovely atmosphere. Good wine selection and a room that earns its following.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/siempre_brooklyn/" class="venue-name-link" target="_blank" rel="noopener">Siempre</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=255%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">255 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens 1pm Wed</div><p class="venue-desc">Mexican restaurant on 3rd Avenue with great food, great service, and great cocktails. A newer addition to the corridor that has already built a following.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://thesimpsonrestaurantbk.com/" class="venue-name-link" target="_blank" rel="noopener">The Simpson</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=673%20Atlantic%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">673 Atlantic Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Open daily, closes 11pm</div><p class="venue-desc">Laid-back Jamaican restaurant on Atlantic Avenue with top-notch food, drinks, service, and atmosphere across a very large review sample. One of the most consistently reviewed spots in the area.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/sobokunyc/" class="venue-name-link" target="_blank" rel="noopener">Soboku</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=276%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">276 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Mon–Fri 5–10pm, Sat–Sun brunch 11:30am–3:30pm plus dinner 5–10pm</div><p class="venue-desc">Smith Street izakaya with a clean, focused menu. Sake, small plates, a room that doesn&#x27;t try too hard. Good for a slow dinner when you want to actually hear your table.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://stellascaribbean.com/" class="venue-name-link" target="_blank" rel="noopener">Stella&#x27;s</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=321%209th%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">321 9th Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens noon</div><p class="venue-desc">Laid-back bistro with Caribbean fare on 9th Street at the southern edge of the neighborhood. Excellent food, great drinks, and top-tier service according to a very consistent set of reviews.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://surfishbistro.com" class="venue-name-link" target="_blank" rel="noopener">Surfish Bistro</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=550%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">550 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Open daily, closes 11pm</div><p class="venue-desc">Peruvian seafood on 3rd Avenue. Around eight types of ceviche plus cooked fish dishes. Beautifully presented and a good choice for a low-key date or a solo dinner at the bar.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.trudies.nyc" class="venue-name-link" target="_blank" rel="noopener">Trudie&#x27;s Tavern</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=524%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">524 Court Street</a></div><div class="venue-hours">Opening 2026</div><p class="venue-desc">From the Gertie and Gertrude&#x27;s team, Trudie&#x27;s is taking over the former Buttermilk Channel space with a menu built around supper, cocktails, raw bar, and rotisserie. The pedigree is strong. One to watch.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><span class="venue-name-plain">Union Street Cafe</span></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=568%20Union%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">568 Union Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Opens 6am</div><p class="venue-desc">Low-key diner for coffee shop classics. Healthy portions, reasonably priced, and open early. A useful neighborhood option for a no-fuss breakfast or lunch.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.untablebrooklyn.com" class="venue-name-link" target="_blank" rel="noopener">Untable</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=529%20Henry%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">529 Henry Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.8★</span></div><div class="venue-hours">Opens noon Thu</div><p class="venue-desc">Thai restaurant on Henry Street with phenomenal food, service, and wine selection. One of the more interesting dining destinations in the Carroll Gardens/Cobble Hill area. Reservations recommended.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.verdeonsmith.com" class="venue-name-link" target="_blank" rel="noopener">Verde on Smith</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=216%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">216 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Open daily, closes 11pm</div><p class="venue-desc">Mediterranean restaurant and garden on Smith Street. Great service, selections, and ambiance. A reliable option for brunch or dinner with garden seating.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://vinnysofcarrollgardens.com" class="venue-name-link" target="_blank" rel="noopener">Vinny&#x27;s of Carroll Gardens</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=295%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">295 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Opens 11am</div><p class="venue-desc">Low-key Italian eatery on Smith Street with extremely generous portions and excellent service. A neighborhood staple for a classic, unpretentious Italian meal.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="http://www.wangsbk.com/" class="venue-name-link" target="_blank" rel="noopener">Wangs</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=671%20Union%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">671 Union Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Opens 11am, closes 10pm</div><p class="venue-desc">Chicken-centric Pan-Asian takeout on Union Street. Fresh, delicious, and filling. A useful option when you want something fast and good without compromising on either.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.whitemaizebk.com" class="venue-name-link" target="_blank" rel="noopener">White Maize</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=277%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">277 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Opens noon</div><p class="venue-desc">Venezuelan restaurant on Smith Street. The ambience is incredible and the food is described as to-die-for across many reviews. An underrated option on the corridor.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/zabbputawn/" class="venue-name-link" target="_blank" rel="noopener">Zabb PuTawn Brooklyn</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=229%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">229 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><div class="venue-hours">Opens noon Wed</div><p class="venue-desc">Thai restaurant on Court Street with exceptional food, service, and pricing. Perfect neighborhood spot is how reviewers describe it, and the numbers back that up.</p>
+  </div>
+</div>
+</section>
+<section id="pizza" class="section">
+<div class="section-header"><h2 class="section-title">Pizza</h2><span class="section-count">9</span></div>
+<div class="venue-list">
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.giardinipizza.com/" class="venue-name-link" target="_blank" rel="noopener">Giardini&#x27;s</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=363%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">363 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.1★</span></div><div class="venue-hours">Open daily 11am–10pm</div><p class="venue-desc">The neighborhood slice shop. Gerry has been running this corner on Smith Street for decades and it&#x27;s the kind of place you stop without planning to. The Sicilian slice is the order. Right across from the Carroll Gardens F/G subway station, which tells you everything about how many people have eaten here.</p>
+  </div>
+  <div class="venue-card pick">
+    <div class="venue-header"><h3 class="venue-name"><span class="pick-star">★</span> <a href="https://www.fnfpizzeria.com" class="venue-name-link" target="_blank" rel="noopener">F&amp;F Pizzeria</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=459%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">459 Court Street</a></div><div class="venue-hours">Wed–Thu noon–9pm, Fri–Sat noon–10pm, Sun noon–9pm, closed Mon–Tue</div><p class="venue-desc">From the Frankies 457 team. Frank Castronovo and Frank Falcinelli opened this slice shop in a converted garage right next door to Frankies Spuntino, using natural fermentation, Bianco DiNapoli organic tomatoes, and their own olive oil. The clam slice is the one to get. One of the best slices in Carroll Gardens and it isn&#x27;t close.</p>
+  </div>
+  <div class="venue-card pick">
+    <div class="venue-header"><h3 class="venue-name"><span class="pick-star">★</span> <a href="http://www.lucali.com" class="venue-name-link" target="_blank" rel="noopener">Lucali</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=575%20Henry%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">575 Henry Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.8★</span></div><div class="venue-hours">Wed–Mon, doors at 5pm, no reservations — arrive early and expect a wait</div><p class="venue-desc">The most famous pizza in Carroll Gardens and consistently ranked the best in New York City. Mark Iacono opened it in 2006 to save a beloved neighborhood candy store from an uncertain fate. Thirty seats, BYOB, no reservations. The line forms as early as 2pm. Worth every minute of the wait.</p>
+  </div>
+  <div class="venue-card coming-soon">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://pauliegee.com" class="venue-name-link" target="_blank" rel="noopener">Paulie Gee&#x27;s Slice Shop</a></h3> <span class="tag tag-coming">Coming Soon</span></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=305%20Nevins%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">305 Nevins Street</a></div><p class="venue-desc">The beloved Greenpoint wood-fired pizza institution is opening a two-floor slice shop and tavern in the former Ample Hills Creamery space on Nevins Street, right next to Royal Palms. Full bar, dining room, and a rooftop deck. Run by brothers Logan and Kyle Driscoll, longtime Paulie Gee&#x27;s employees. One of the most anticipated Gowanus openings in recent memory.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.princestreetpizza.com" class="venue-name-link" target="_blank" rel="noopener">Prince Street Pizza</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=271%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">271 Smith Street</a></div><p class="venue-desc">The Greenpoint slice shop opened a Smith Street location in 2026. Pepperoni cups, crispy squares, the format that made the original famous.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.smithstreetpizza.com/" class="venue-name-link" target="_blank" rel="noopener">Smith Street Pizza</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=311%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">311 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 11:30am, closes 10pm</div><p class="venue-desc">Excellent service, excellent food, excellent atmosphere according to a very consistent set of reviews. A solid Smith Street slice and pie option.</p>
+  </div>
+  <div class="venue-card pick">
+    <div class="venue-header"><h3 class="venue-name"><span class="pick-star">★</span> <a href="https://table87.com" class="venue-name-link" target="_blank" rel="noopener">Table 87</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=473%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">473 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Open daily, closes 10pm</div><p class="venue-desc">Coal-fired pizza available by the slice on 3rd Avenue. One of the more recognized pizza spots on the corridor, with a large review base to back it up.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.unionstreetpizza.com/" class="venue-name-link" target="_blank" rel="noopener">Union Street Pizza</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=226%204th%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">226 4th Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens 11:30am</div><p class="venue-desc">Kind, accommodating staff and absolutely delicious, affordable pizza. One of the best-reviewed pizza spots in the immediate Gowanus area.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://valentinospizzabrooklynny.com/" class="venue-name-link" target="_blank" rel="noopener">Valentino&#x27;s Pizza Brooklyn</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=291%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">291 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Opens 11am, closes 10pm</div><p class="venue-desc">Pizza on 3rd Avenue with quality food and excellent customer service. A neighborhood option worth knowing about.</p>
+  </div>
+</div>
+</section>
+<section id="wine-bars" class="section">
+<div class="section-header"><h2 class="section-title">Wine Bars</h2><span class="section-count">5</span></div>
+<div class="venue-list">
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.anaisbk.com/" class="venue-name-link" target="_blank" rel="noopener">Anaïs</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=196%20Bergen%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">196 Bergen Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Open daily, closes 11pm</div><p class="venue-desc">Cozy, moody wine bar on Bergen Street with solid wines by the glass and accommodating staff. A good option for a low-key evening drink in Cobble Hill.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.blkmtnwinehouse.com" class="venue-name-link" target="_blank" rel="noopener">Black Mountain Wine House</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=415%20Union%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">415 Union Street Ground Floor</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Open daily, closes midnight</div><p class="venue-desc">Farmhouse-style wine bar on Union Street. Super cute and chill with a great dim fireplace-lit scene. The truffle mac and cheese is mentioned in review after review alongside the wine list. An established Gowanus wine bar with a strong following and a warm room.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.junebk.com/" class="venue-name-link" target="_blank" rel="noopener">June</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=231%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">231 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Open daily, closes midnight</div><p class="venue-desc">Natural wine bar with seasonal small plates on Court Street. Great wine, great atmosphere, and great service. A reliable neighborhood wine bar.</p>
+  </div>
+  <div class="venue-card coming-soon">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/sakebrooklyn" class="venue-name-link" target="_blank" rel="noopener">Sake Brooklyn</a></h3> <span class="tag tag-coming">Coming Soon</span></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=500%20Degraw%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">500 Degraw Street (inside Society Brooklyn)</a></div><p class="venue-desc">A sake bar with a social, approachable take on the drink, setting up inside Society Brooklyn on Degraw Street. The neighborhood doesn&#x27;t have anything quite like this. Follow Instagram for the opening announcement.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.lizsbookbar.com/" class="venue-name-link" target="_blank" rel="noopener">Liz&#x27;s Book Bar</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=315%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">315 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><div class="venue-hours">Opens 8am</div><p class="venue-desc">Cozy wine and book bar on Smith Street that also opens in the morning for coffee. Great wine selection, snacks, and a vibe that&#x27;s genuinely relaxed. One of the more distinctive spots on the street.</p>
+  </div>
+</div>
+</section>
+<section id="bars" class="section">
+<div class="section-header"><h2 class="section-title">Bars</h2><span class="section-count">37</span></div>
+<div class="venue-list">
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.abilenebarbrooklyn.com/" class="venue-name-link" target="_blank" rel="noopener">Abilene Bar</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=442%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">442 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.3★</span></div><p class="venue-desc">Long-running Carroll Gardens bar on Court Street. No concept, no gimmick. A reliable neighborhood bar with a good draft selection and the particular comfort of knowing it will still be there next year.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://atolyenyc.com/" class="venue-name-link" target="_blank" rel="noopener">Atolye Venue &amp; Bar</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=236b%206th%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">236b 6th Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.8★</span></div><div class="venue-hours">Open 24 hours</div><p class="venue-desc">Bar open around the clock. Amazing drinks and very friendly bartenders. One of the few options in the area when you need a drink at an unusual hour.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.barferdinando.com" class="venue-name-link" target="_blank" rel="noopener">Bar Ferdinando</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=151%20Union%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">151 Union Street</a></div><p class="venue-desc">Opened spring 2026 in the former Focacceria space. The name is a deliberate nod to the neighborhood&#x27;s Italian history. An Italian wine bar and small plates spot that treats the Carroll Gardens heritage as a reason to do things right rather than a nostalgic gimmick.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.bargreatharry.com" class="venue-name-link" target="_blank" rel="noopener">Bar Great Harry</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=280%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">280 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Open daily, closes 4am</div><p class="venue-desc">Low-key hangout on Smith Street with a big beer selection and friendly bartenders. Open late. A neighborhood bar in the best sense.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.barreve.com" class="venue-name-link" target="_blank" rel="noopener">Bar Reve</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=272%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">272 Smith Street</a></div><div class="venue-hours">Open Wed–Sun</div><p class="venue-desc">Belle Epoque cocktail bar that opened in late 2025 and immediately felt like it had been there forever. Red velvet, Murano chandeliers, cocktails named after literary figures. The kind of place you bring someone you want to impress without making them feel like they&#x27;re being impressed.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.barelydisfigured.com" class="venue-name-link" target="_blank" rel="noopener">Barely Disfigured</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=257%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">257 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Open daily, closes 11:30pm</div><p class="venue-desc">Cocktail lounge in a former brothel on Smith Street. Great music, great people, and really good drinks. The atmosphere is the reason to go.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://beeskneesprovisions.com" class="venue-name-link" target="_blank" rel="noopener">Bee&#x27;s Knees Provisions</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=215%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">215 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 8am Wed</div><p class="venue-desc">Cocktail bar on Smith Street with great wines, great happy hour, and an amazing charcuterie selection. Opens in the morning. A versatile option on the corridor.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.bijansbrooklyn.com" class="venue-name-link" target="_blank" rel="noopener">Bijan&#x27;s</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=81%20Hoyt%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">81 Hoyt Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.3★</span></div><p class="venue-desc">Mediterranean bar and grill in Boerum Hill with a solid happy hour, open mic nights, and a following large enough that 1,346 Google reviews is not a surprise. The kind of bar that becomes part of a neighborhood&#x27;s weekly routine.</p>
+  </div>
+  <div class="venue-card pick">
+    <div class="venue-header"><h3 class="venue-name"><span class="pick-star">★</span> <span class="venue-name-plain">The Brooklyn Inn</span></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=148%20Hoyt%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">148 Hoyt Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Open daily, closes 2am</div><p class="venue-desc">Opened in 1885. Anton Zeiner&#x27;s carved wood bar and pressed tin ceiling are original. No TVs, no website worth speaking of. Appeared in the films Smoke and Gotham. If you want to understand what this part of Brooklyn looked like before any of the above existed, an hour at the Brooklyn Inn will do more than any history book.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://brooklynsocialbar.com/" class="venue-name-link" target="_blank" rel="noopener">Brooklyn Social</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=335%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">335 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Open daily, closes midnight</div><p class="venue-desc">Former Italian social club turned bar on Smith Street. A very cool space with amazing cocktails and a friendly staff. One of the more distinctive rooms on the corridor.</p>
+  </div>
+  <div class="venue-card pick">
+    <div class="venue-header"><h3 class="venue-name"><span class="pick-star">★</span> <a href="https://www.instagram.com/canalbarbklyn/" class="venue-name-link" target="_blank" rel="noopener">Canal Bar</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=270%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">270 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Open daily, closes 4am</div><p class="venue-desc">One of the original Gowanus bars. Dog-friendly, cash-friendly, with a backyard that fills up on summer nights. A reminder of what the neighborhood was like before the rezoning conversation started. Go when you want a beer without commentary.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.cloverclubny.com" class="venue-name-link" target="_blank" rel="noopener">Clover Club</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=210%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">210 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Open daily, closes midnight</div><p class="venue-desc">Retro cocktail bar on Smith Street. Cozy dim lighting, super nice service, and serious cocktails. One of the more established and well-regarded bars on the corridor.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.congressbarbk.com" class="venue-name-link" target="_blank" rel="noopener">Congress Bar</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=208%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">208 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Open daily, closes 2am</div><p class="venue-desc">Intimate cocktail bar with a funky vibe on Court Street. A neighborhood spot worth knowing about for a creative drink in the Carroll Gardens area.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/eightysevennextdoor/" class="venue-name-link" target="_blank" rel="noopener">Eighty Seven Next Door</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=475%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">475 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Open daily, closes midnight</div><p class="venue-desc">Cocktail bar next to Table 87 on 3rd Avenue. Delicious food, unique and tasty cocktails, and friendly attentive service. A newer addition to the corridor worth keeping an eye on.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://evalynstaphouse.com" class="venue-name-link" target="_blank" rel="noopener">Evalyn&#x27;s Tap House</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=236%20Butler%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">236 Butler Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Opens 4pm Thu</div><p class="venue-desc">Bar and tap house on Butler Street in the heart of Gowanus. A neighborhood tap house worth knowing about for a low-key evening close to the canal.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://gowanusgardensbk.com" class="venue-name-link" target="_blank" rel="noopener">Gowanus Gardens</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=256%204th%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">256 4th Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Open daily, closes 2am</div><p class="venue-desc">Neighborhood bar and patio on 4th Avenue. Good food, good drink selections, open late. One of the better warm-weather patio options in the area.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/gowanusyachtclub/" class="venue-name-link" target="_blank" rel="noopener">Gowanus Yacht Club</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=323%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">323 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Seasonal, open daily in summer, closes midnight</div><p class="venue-desc">Seasonal beer garden and hot dogs on Smith Street. Good burgers, great beer selection. A neighborhood institution for a casual summer evening. No reservations, no pretense.</p>
+  </div>
+  <div class="venue-card pick">
+    <div class="venue-header"><h3 class="venue-name"><span class="pick-star">★</span> <a href="https://halyardsbar.com" class="venue-name-link" target="_blank" rel="noopener">Halyards</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=406%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">406 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Open daily, closes 2am</div><p class="venue-desc">Halyards has been the go-to Gowanus bar for years and has held up. A large outdoor seating area on the old shipping dock makes it especially good in warm weather. Slushy margaritas, a crowd that tilts local, no pretense. The canal is right there.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.henrypublic.com" class="venue-name-link" target="_blank" rel="noopener">Henry Public</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=329%20Henry%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">329 Henry Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Open daily, closes 11pm</div><p class="venue-desc">Hip tavern on Henry Street with upscale pub fare. Funky, acidic wine that pairs well with the food, and a room that earns the hip tavern description.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.lofibrooklyn.com" class="venue-name-link" target="_blank" rel="noopener">LoFI Bar</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=341%202nd%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">341 2nd Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Open daily, closes 1am</div><p class="venue-desc">Cozy, artsy cocktail bar on 2nd Street. Great cocktails in a space that feels genuinely lived-in and creative. A neighborhood gem worth seeking out.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.lowlandsbar.com/" class="venue-name-link" target="_blank" rel="noopener">Lowlands Bar</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=543%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">543 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Open daily, closes 2am</div><p class="venue-desc">Laid-back hangout with a garden patio on 3rd Avenue. Easy vibe, chill staff, affordable drinks. A solid option when you want to be outside.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.luanastavern.com/" class="venue-name-link" target="_blank" rel="noopener">Luana&#x27;s Tavern</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=449%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">449 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Opens 4pm, closes 10pm</div><p class="venue-desc">Bar on Court Street with a phenomenal beer selection and great Guinness pours. A proper tavern with good drinks and a neighborhood crowd.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.lucky13saloon.com/" class="venue-name-link" target="_blank" rel="noopener">Lucky 13 Saloon</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=644%20Sackett%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">644 Sackett Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Open daily, closes 4am</div><p class="venue-desc">Heavy-metal-themed bar on Sackett Street. Cheap drinks, friendly staff, interesting patrons, and excellent metal. One of the more distinctive drinking establishments in the neighborhood.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="http://www.minibarbrooklyn.com/" class="venue-name-link" target="_blank" rel="noopener">Minibar</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=482%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">482 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Open daily, closes 2am</div><p class="venue-desc">Creative cocktails in a cozy atmosphere on Court Street. Delicious drinks, fun music, and a place that gets people talking. Open late.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.queue.beer/" class="venue-name-link" target="_blank" rel="noopener">Queue Beer</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=500%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">500 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><div class="venue-hours">Opens 3pm Wed</div><p class="venue-desc">Craft beer bar at the southern end of Smith Street with nice vibes, friendly staff, and fair prices. One of the highest-rated spots on the corridor by star rating.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://royalpalmsbk.com" class="venue-name-link" target="_blank" rel="noopener">Royal Palms Shuffleboard Club</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=514%20Union%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">514 Union Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Mon–Wed 6pm–midnight, Thu–Fri 6pm–2am, Sat noon–2am</div><p class="venue-desc">Tropical-themed shuffleboard bar in the heart of Gowanus and a neighborhood institution by now. Flamingo wallpaper, frozen drinks, six regulation shuffleboard courts. Come for the game, stay for the frozen cocktails.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.saturnroadnyc.com/" class="venue-name-link" target="_blank" rel="noopener">Saturn Road</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=276%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">276 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens 7am</div><p class="venue-desc">Bar on Court Street that opens in the morning and serves bagels alongside a good wine selection. A neighborhood spot with an unusual and useful range of hours.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/seven18ny/" class="venue-name-link" target="_blank" rel="noopener">Seven18 NY</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=593%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">593 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><div class="venue-hours">Opens 6pm</div><p class="venue-desc">Cozy cocktail bar on 3rd Avenue. Music, food, and drinks all get strong marks. A newer entry with early promise.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/shaniasmaxbet/" class="venue-name-link" target="_blank" rel="noopener">Shania&#x27;s Max Bet</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=3rd%20Avenue%20Gowanus%20Brooklyn%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">3rd Avenue, Gowanus</a></div><div class="venue-hours">Coming mid-2026</div><p class="venue-desc">Taking over the former Dirty Precious space. The owners met at Royal Palms, which tells you something about the energy they&#x27;re going for. Cocktail bar with a mid-summer target.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://socialcues.com/locations/vogue/" class="venue-name-link" target="_blank" rel="noopener">Social Cues Vogue</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=522%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">522 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Open daily, closes midnight</div><p class="venue-desc">Karaoke, pool, and cocktails on 3rd Avenue. A fun option for a group night out that wants something more than just a bar.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.thebaringowanus.com/" class="venue-name-link" target="_blank" rel="noopener">The Bar in Gowanus</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=286%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">286 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">5.0★</span></div><div class="venue-hours">Check hours on Google</div><p class="venue-desc">Stellar service, great cocktails, and a perfect atmosphere. On 3rd Avenue in the core of Gowanus with a perfect early rating.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://brazenheadbrooklyn.com" class="venue-name-link" target="_blank" rel="noopener">The Brazen Head</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=228%20Atlantic%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">228 Atlantic Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Open daily, closes 2am</div><p class="venue-desc">Neighborhood pub on Atlantic Avenue with a craft beer focus. Friendly staff, cozy atmosphere, and a solid selection. A reliable option at the northern edge of the coverage area.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="http://www.theowlfarm.com" class="venue-name-link" target="_blank" rel="noopener">The Owl Farm</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=297%209th%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">297 9th Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Open daily, closes 2am</div><p class="venue-desc">Hip, dog-friendly craft beer bar on 9th Street. Chill, low-key environment with great drinks. A neighborhood favorite at the southern edge of the area.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/travelbarbrooklyn/" class="venue-name-link" target="_blank" rel="noopener">Travel Bar</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=520%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">520 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Open daily, closes midnight</div><p class="venue-desc">Chill cocktail spot on Court Street with an extensive selection of spirits from around the world. A bar that takes the concept seriously.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.uniongroundsbk.com/" class="venue-name-link" target="_blank" rel="noopener">Union Grounds</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=270%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">270 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Open daily, closes 1am</div><p class="venue-desc">Sports bar and local hangout on Smith Street with TV sports and pub grub. Prices are reasonable for the area. A good option when you want to watch a game.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.whiskandwhiskeybklyn.com/" class="venue-name-link" target="_blank" rel="noopener">Whisk &amp; Whiskey</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=259%204th%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">259 4th Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens 3pm</div><p class="venue-desc">Craft cocktails on 4th Avenue in a hip, comfortable environment. Delicious drinks and friendly service.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.thewingbar.com/" class="venue-name-link" target="_blank" rel="noopener">Wingbar</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=275%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">275 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Open daily, closes midnight</div><p class="venue-desc">Spicy wing joint on Smith Street with a full bar. A Smith Street staple for a casual group night out.</p>
+  </div>
+</div>
+</section>
+<section id="breweries" class="section">
+<div class="section-header"><h2 class="section-title">Breweries</h2><span class="section-count">6</span></div>
+<div class="venue-list">
+  <div class="venue-card pick">
+    <div class="venue-header"><h3 class="venue-name"><span class="pick-star">★</span> <a href="https://finbackbrewery.com" class="venue-name-link" target="_blank" rel="noopener">Finback Brewery</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=https%3A//www.google.com/maps/search/%3Fapi%3D1%26query%3D545%2520President%2520Street%2520Brooklyn%2520NY%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">545 President Street</a></div><div class="venue-hours">Taproom open Thu–Sun</div><p class="venue-desc">Finback runs brewery, taproom, restaurant, and retail shop under one roof. The kitchen puts out food that competes with the beer for attention. Technically on the Sunset Park side of the industrial zone, but close enough to Gowanus that it&#x27;s part of the same circuit.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://foreverhomebrewing.com" class="venue-name-link" target="_blank" rel="noopener">Forever Brewing</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=574A%20President%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">574A President Street</a></div><p class="venue-desc">Opened April 2026 in the space Strong Rope held for ten years. The husband-and-wife team behind Brooklyn&#x27;s only homebrew supply shop took over and rebranded, adding their own beers to the tap lineup while keeping the homebrew shop running.</p>
+  </div>
+  <div class="venue-card coming-soon">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.focalpoint.beer" class="venue-name-link" target="_blank" rel="noopener">Focal Point Beer Co.</a></h3> <span class="tag tag-coming">Coming Soon</span></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=420%20Carroll%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">420 Carroll Street</a></div><p class="venue-desc">Coming from Long Island City, where it has built a real following with its taproom and small-batch beers. The Gowanus location will be a full-service restaurant with outdoor waterfront seating along the canal. A brewery with canal views and a kitchen is a proper destination. One of the most anticipated openings in the 420 Carroll ground-floor development.</p>
+  </div>
+  <div class="venue-card pick">
+    <div class="venue-header"><h3 class="venue-name"><span class="pick-star">★</span> <a href="https://otherhalfbrewing.com" class="venue-name-link" target="_blank" rel="noopener">Other Half Brewing</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=195%20Centre%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">195 Centre Street</a></div><div class="venue-hours">Open daily</div><p class="venue-desc">One of the most recognized craft breweries in New York and a genuine anchor for the Gowanus bar scene. The IPA program is what made the reputation; the collaborations with other breweries are what keep it interesting.</p>
+  </div>
+  <div class="venue-card pick">
+    <div class="venue-header"><h3 class="venue-name"><span class="pick-star">★</span> <a href="https://threesbrewing.com" class="venue-name-link" target="_blank" rel="noopener">Threes Brewing</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=333%20Douglass%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">333 Douglass Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Open daily, closes midnight</div><p class="venue-desc">A neighborhood institution for a low-key big-group hang. Threes runs the brewing operation and a rotating food program through Tiny Montgomery. The space is comfortable and unpretentious, with enough room that you can usually find a table without a wait.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://wildeastbrewing.com" class="venue-name-link" target="_blank" rel="noopener">Wild East Brewing</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=623%20Sackett%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">623 Sackett Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.8★</span></div><div class="venue-hours">Mon–Fri 2–10pm, Sat noon–11pm, Sun noon–9pm</div><p class="venue-desc">One-third woman-owned, opened during the pandemic, and quietly one of the best breweries in the neighborhood. Twenty draft lines covering farmhouse ales, hazy IPAs, rustic lagers, and barrel-aged sours. Outside food welcome, which makes it easy to turn into a full evening.</p>
+  </div>
+</div>
+</section>
+<section id="coffee" class="section">
+<div class="section-header"><h2 class="section-title">Coffee and Cafes</h2><span class="section-count">36</span></div>
+<div class="venue-list">
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.absolutecoffee.nyc/" class="venue-name-link" target="_blank" rel="noopener">Absolute Coffee</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=327%20Atlantic%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">327 Atlantic Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Opens 7am</div><p class="venue-desc">Down-to-earth nook for espresso and treats on Atlantic Avenue. The coffee is exceptional, rich, flavorful, and expertly brewed. A reliable stop at the northern edge of the coverage area.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.atelierariana.com/" class="venue-name-link" target="_blank" rel="noopener">Atelier Ariana</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=478%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">478 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.8★</span></div><div class="venue-hours">Opens 7am</div><p class="venue-desc">Smith Street coffee shop where the coffee is always on point and the pastries are always amazing. One of the better options at the southern end of the corridor.</p>
+  </div>
+  <div class="venue-card pick">
+    <div class="venue-header"><h3 class="venue-name"><span class="pick-star">★</span> <a href="https://www.beanmongercoffee.com/" class="venue-name-link" target="_blank" rel="noopener">Beanmonger Coffee</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=620%20Union%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">620 Union Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.8★</span></div><div class="venue-hours">Opens 7:30am</div><p class="venue-desc">Friendly service, comfortable atmosphere, and consistently good coffee. One of the best-reviewed cafes in the immediate Gowanus area.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.blankstreet.com" class="venue-name-link" target="_blank" rel="noopener">Blank Street</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=178%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">178 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Opens 6:30am</div><p class="venue-desc">The Court Street outpost of the NYC mini-chain. Fast, reliable, with a croissant worth stopping for. Good for when you&#x27;re in a hurry and don&#x27;t want to compromise on the coffee.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/bolobolonyc/" class="venue-name-link" target="_blank" rel="noopener">Bolo Bolo Café &amp; Bakery</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=196%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">196 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><div class="venue-hours">Opens 8am</div><p class="venue-desc">Small space, good quality coffee, and a friendly barista. One of the highest-rated cafes on the Court Street corridor.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.bondstcafe.com" class="venue-name-link" target="_blank" rel="noopener">Bond St Coffee and Goods</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=365%20Bond%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">365 Bond Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Open 7am–8pm</div><p class="venue-desc">Chill hangout for light fare and coffee on Bond Street. Good coffee, solid morning food, and a neighborhood crowd without any pretense.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://brooklynbread.com/" class="venue-name-link" target="_blank" rel="noopener">Brooklyn Bread Cafe</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=412%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">412 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Opens 7am</div><p class="venue-desc">Breakfast, sandwiches, and coffee on Court Street. The homemade bread is exceptional, and the sandwiches built on it are worth the trip.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://brooklynhabit.com/" class="venue-name-link" target="_blank" rel="noopener">Brooklyn Habit</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=405%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">405 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Open 7am–8pm</div><p class="venue-desc">Spacious interior, nice staff, and great coffee on Smith Street. One of the more comfortable places to sit and work on the corridor.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.cafecottonbean.com/" class="venue-name-link" target="_blank" rel="noopener">Cafe Cotton Bean</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=372%20Sackett%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">372 Sackett Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Opens 7am</div><p class="venue-desc">Fantastic coffee in a small, neighborhood-facing room. The kind of place you discover and immediately tell someone about.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.cafenoirebk.com/" class="venue-name-link" target="_blank" rel="noopener">Cafe Noire</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=421%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">421 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><div class="venue-hours">Opens 8am</div><p class="venue-desc">Friendly owner, quick service, and great coffee at reasonable prices on Court Street. A wonderful tiny cafe that punches well above its size.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://cafecitosocial.com/" class="venue-name-link" target="_blank" rel="noopener">Cafecito Social</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=296%20Bond%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">296 Bond Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 7am</div><p class="venue-desc">Guatemalan coffee shop on Bond Street. The coffee is sourced from their home country and served to perfection. Small, specific, and doing something nobody else in the area is doing.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.chipcitycookies.com" class="venue-name-link" target="_blank" rel="noopener">Chip City</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=361%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">361 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens 2pm</div><p class="venue-desc">Cookie and dessert shop on Smith Street. Delicious cookies, friendly service, and a store that&#x27;s always clean. Goes well with coffee, tea, or milk.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://damicocoffee.com" class="venue-name-link" target="_blank" rel="noopener">D&#x27;Amico Coffee</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=309%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">309 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 7am</div><p class="venue-desc">Seventy-eight years on Court Street. Family-owned, old-school, roasting their own beans. A piece of the neighborhood&#x27;s Italian-American backbone that has survived every wave of change.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.cafevolkan.com/" class="venue-name-link" target="_blank" rel="noopener">Cafe Volkan</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=85%20Bergen%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">85 Bergen Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><p class="venue-desc">Tiny hole-in-the-wall on Bergen Street using Devocion beans and drawing serious brunch reviews. Small, unpretentious, and well-loved by the people who find it.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.dolcebrooklyn.com/" class="venue-name-link" target="_blank" rel="noopener">Dolce Brooklyn</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=204%20Sackett%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">204 Sackett Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 8am, closes 10pm</div><p class="venue-desc">Artisanal gelato shop that also does coffee in a simple, well-designed space on Sackett Street. Great service and good prices.</p>
+  </div>
+  <div class="venue-card pick">
+    <div class="venue-header"><h3 class="venue-name"><span class="pick-star">★</span> <a href="https://www.instagram.com/enso.ny/" class="venue-name-link" target="_blank" rel="noopener">Enso Cafe</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=665%20President%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">665 President Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><div class="venue-hours">Opens 7:30am</div><p class="venue-desc">Friendly baristas, delicious coffee, and cozy decor on President Street. One of the highest-rated cafes in the Gowanus area.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/fiorella_nyc/" class="venue-name-link" target="_blank" rel="noopener">Fiorella Coffee &amp; Flower Shop</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=510%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">510 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><div class="venue-hours">Opens 7am</div><p class="venue-desc">Coffee and flower shop on 3rd Avenue. Rich, smooth, perfectly made cappuccino according to reviewers. A beautiful space that earns its rating.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/highbeam.coffee/" class="venue-name-link" target="_blank" rel="noopener">High Beam Coffee</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=398%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">398 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.3★</span></div><div class="venue-hours">Opens 7am</div><p class="venue-desc">Red Hook roastery from Selina Ullrich (formerly of East One Coffee Roasters). The Van Brunt flagship opened first; this Carroll Gardens cafe, in the old Local Roots space, is the second location. Staff is friendly and the space is beautiful.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.ixvcoffee.com/" class="venue-name-link" target="_blank" rel="noopener">IXV Coffee</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=497c%20Pacific%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">497c Pacific Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 7:30am</div><p class="venue-desc">Superb coffee, excellent service, and a lovely cozy atmosphere on Pacific Street. A well-regarded neighborhood cafe in the Boerum Hill/Cobble Hill corridor.</p>
+  </div>
+  <div class="venue-card pick">
+    <div class="venue-header"><h3 class="venue-name"><span class="pick-star">★</span> <a href="https://www.longshadowcoffee.com/" class="venue-name-link" target="_blank" rel="noopener">Long Shadow Coffee</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=543%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">543 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">5.0★</span></div><div class="venue-hours">Opens 8am</div><p class="venue-desc">Stellar coffee, incredible staff, and a relaxing atmosphere on 3rd Avenue. A perfect rating with 146 reviews is rare and the consistency of the reviews backs it up.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/lovedonescoffee" class="venue-name-link" target="_blank" rel="noopener">Loved Ones Coffee</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=253%20Bergen%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">253 Bergen Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><p class="venue-desc">Family-run cafe on Bergen Street where owner Zane roasts his own beans in-house. A 4.9 rating on over 100 reviews means the regulars feel strongly. The kind of coffee shop where the sourcing and the hospitality are both taken seriously.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.loshermanoscoffeeandtaqueria.com/" class="venue-name-link" target="_blank" rel="noopener">Los Hermanos Coffee and Taqueria</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=142%20W%209th%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">142 W 9th Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 8am, closes 10pm</div><p class="venue-desc">Coffee and Latin American food at the southern end of the Gowanus area on 9th Street. A neighborhood spot that covers both morning coffee and a full menu.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.lunalamerbk.com/" class="venue-name-link" target="_blank" rel="noopener">Luna La Mer</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=468%204th%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">468 4th Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.8★</span></div><div class="venue-hours">Opens 8am</div><p class="venue-desc">Food excellent, staff impeccable, ambiance brilliant. The cappuccinos are delicious and the food is genuinely incredible. A strong newer entry on the 4th Avenue corridor.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.mirrorinthewoods.com/" class="venue-name-link" target="_blank" rel="noopener">Mirror Tea House</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=575%20Union%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">575 Union Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><div class="venue-hours">Open 1pm–8:30pm, opens 3pm Fri</div><p class="venue-desc">Japanese-inspired tea and coffee cafe. Ambiance, service, food, and drink quality all described as spectacular. Known for the banana milk hojicha latte and other specialty drinks you won&#x27;t find elsewhere in the neighborhood.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.mistercheeksbk.com/" class="venue-name-link" target="_blank" rel="noopener">Mister Cheeks</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=347%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">347 Court Street</a></div><div class="venue-hours">Open daily</div><p class="venue-desc">All-day cafe opened late 2025. Coffee and pastries in the morning from a takeout window, sandwiches and rotisserie chicken through dinner. Kid-friendly with homemade soft serve.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://ninthstreetespresso.com" class="venue-name-link" target="_blank" rel="noopener">Ninth Street Espresso</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=333%20Douglass%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">333 Douglass Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 8am</div><p class="venue-desc">The coffee program inside the Threes Brewing complex. Friendly staff and a low-key environment. A useful stop before or after whatever else is happening in that building.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.nilibk.com/" class="venue-name-link" target="_blank" rel="noopener">Nili</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=360%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">360 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 7am</div><p class="venue-desc">Cafe on Smith Street with excellent coffee, a bureka, and breakfast pita sandwiches. Good food, atmosphere, and service.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/octaviacoffeebk/" class="venue-name-link" target="_blank" rel="noopener">Octavia Coffee</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=198%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">198 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 7am</div><p class="venue-desc">Right next door to Bolo Bolo on Court Street. A cappuccino that reviewers keep coming back to describe as perfectly balanced. Two strong options on the same block.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.poeticacoffee.com/" class="venue-name-link" target="_blank" rel="noopener">Poetica Coffee</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=251%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">251 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Opens 7am</div><p class="venue-desc">Small, neighborhood-facing Smith Street coffee shop with consistently good espresso drinks and a kind barista.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://principlesbk.nyc/" class="venue-name-link" target="_blank" rel="noopener">Principles GI Coffee House</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=139%209th%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">139 9th Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.8★</span></div><div class="venue-hours">Opens 8am</div><p class="venue-desc">Coffee roastery on 9th Street with delicious coffee and knowledgeable, kind staff. One of the most-reviewed coffee shops in the neighborhood.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/roothillcafe/" class="venue-name-link" target="_blank" rel="noopener">Root Hill Cafe</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=262%204th%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">262 4th Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Opens 7:30am</div><p class="venue-desc">Daytime American cafe on 4th Avenue. Amazing food, nice people, and a chill atmosphere. Good for a quick morning stop or a longer sit.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/stilllifebrooklyn/" class="venue-name-link" target="_blank" rel="noopener">Still Life</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=573%20Sackett%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">573 Sackett Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><div class="venue-hours">Opens 8am</div><p class="venue-desc">Coffee shop and ceramic art studio combined, opened fall 2025. Partners Coffee on the espresso bar, drop-in ceramic sessions and rotating workshops in the back. Worth the slight detour.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.stumptowncoffee.com" class="venue-name-link" target="_blank" rel="noopener">Stumptown Coffee Roasters</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=212b%20Pacific%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">212b Pacific Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Opens 6:30am</div><p class="venue-desc">Direct-trade coffee bar on Pacific Street. Friendly staff, tasty coffee, and plenty of seating. A reliable option when you need a quick, quality cup.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.thescionproject.com/" class="venue-name-link" target="_blank" rel="noopener">The Scion Project</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=288%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">288 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 7am</div><p class="venue-desc">Excellent, well-made coffee with yummy pastries and exceptional service on Smith Street. A newer entry worth knowing about.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><span class="venue-name-plain">Turbine Cafe</span></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=221%20Waverly%20Avenue%20Brooklyn%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">221 Waverly Avenue (inside Powerhouse Arts)</a></div><div class="venue-hours">Open when Powerhouse Arts is open</div><p class="venue-desc">The ground-floor cafe inside Powerhouse Arts, named for the building&#x27;s history as a turbine generator plant. Coffee and pastries. A good reason to combine a gallery visit with a coffee stop.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://whitenoisecoffee.com" class="venue-name-link" target="_blank" rel="noopener">White Noise Coffee</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=57%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">57 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.4★</span></div><div class="venue-hours">Opens 8am</div><p class="venue-desc">Coffee shop and roastery on Smith Street. Delicious coffee, very friendly service, and a cool atmosphere. A solid option at the northern end of the corridor.</p>
+  </div>
+</div>
+</section>
+<section id="bakeries" class="section">
+<div class="section-header"><h2 class="section-title">Bakeries</h2><span class="section-count">24</span></div>
+<div class="venue-list">
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.acqbread.com/" class="venue-name-link" target="_blank" rel="noopener">ACQ Bread Co.</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=543%20Clinton%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">543 Clinton Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.8★</span></div><div class="venue-hours">Opens 4pm Fri</div><p class="venue-desc">Unique sourdough, cookies, and other baked goods on Clinton Street. Worth the price and the trip according to consistent reviewers.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/bombolonabakehouse/" class="venue-name-link" target="_blank" rel="noopener">Bombolona Bakehouse</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=520%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">520 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.8★</span></div><div class="venue-hours">Opens 9am</div><p class="venue-desc">Sandwiches and pastries on 3rd Avenue with huge portions and consistently good baked goods. Delicious food, warm staff, pleasant atmosphere.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/breadandjoe/" class="venue-name-link" target="_blank" rel="noopener">Bread &amp; Joe</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=618%204th%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">618 4th Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.8★</span></div><div class="venue-hours">Opens 7am</div><p class="venue-desc">Cozy coffee and pastry shop on 4th Avenue with great baked goods and very helpful staff. A reliable neighborhood stop on the eastern corridor.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.biencuit.com" class="venue-name-link" target="_blank" rel="noopener">Bien Cuit</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=120%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">120 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.1★</span></div><div class="venue-hours">Opens 7am</div><p class="venue-desc">French bakery on Smith Street known for its bread program and pastries. One of the earlier craft bakeries to plant a flag on the corridor, and still a destination for a serious loaf.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.brooklynfrenchbakers.com/" class="venue-name-link" target="_blank" rel="noopener">Brooklyn French Bakers</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=273%20Columbia%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">273 Columbia Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 7:30am</div><p class="venue-desc">Some of the best croissants in the area. Worth the slight detour toward the Columbia Street waterfront.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://brooklyngranaryandmill.com/" class="venue-name-link" target="_blank" rel="noopener">Brooklyn Granary &amp; Mill</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=240%20Huntington%20Street%20Brooklyn%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">240 Huntington Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.8★</span></div><div class="venue-hours">Opens 7:30am</div><p class="venue-desc">The flour mill runs on the second floor; the bakery occupies the ground level. Loaves, baguettes, focaccia, croissants, and scones, all made from grain milled on-site. The best bread in the city, all made with stone-ground flour.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://byclionyc.com/" class="venue-name-link" target="_blank" rel="noopener">ByClio Bakery</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=400%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">400 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><div class="venue-hours">Opens 10am</div><p class="venue-desc">Moist, dense cakes, hot lattes, and friendly fast service. One of the best-reviewed bakeries on the 3rd Avenue corridor and a go-to for custom orders.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://buttermilkbakeshop.com/" class="venue-name-link" target="_blank" rel="noopener">Buttermilk Bakeshop</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=530%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">530 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">5.0★</span></div><div class="venue-hours">Opens 11am</div><p class="venue-desc">A perfect 5.0 stars with 200 reviews. Custom cupcakes, cakes, and baked goods made to order. The reviews are consistent: people keep coming back and keep sending other people.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.colsonpatisserie.com" class="venue-name-link" target="_blank" rel="noopener">Colson Patisserie</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=374%209th%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">374 9th Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Opens 7:30am</div><p class="venue-desc">French-Belgian patisserie at the southern end of the coverage area. Great coffee, yummy pastries, and welcoming staff in a snug space.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><span class="venue-name-plain">Court Pastry Shop</span></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=298%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">298 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 8:30am</div><p class="venue-desc">Old-school Sicilian bakery on Court Street. Consistently delicious and a staple in the lives of locals who know about it.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://damascusbakery.com/" class="venue-name-link" target="_blank" rel="noopener">Damascus Bread &amp; Pastry Shop</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=195%20Atlantic%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">195 Atlantic Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 7am</div><p class="venue-desc">Syrian bakeshop on Atlantic Avenue with homemade breads and pastries. Fair prices, fresh ingredients, and always friendly service. A genuinely distinctive entry in the neighborhood bakery landscape.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://everybodyeats-inc.com/" class="venue-name-link" target="_blank" rel="noopener">Everybody Eats</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=294%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">294 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens 10am</div><p class="venue-desc">Gluten-free and nut-free bakery on 3rd Avenue. One of the few places in the neighborhood where people with dietary restrictions can eat everything on the menu. The cakes are legitimately good.</p>
+  </div>
+  <div class="venue-card pick">
+    <div class="venue-header"><h3 class="venue-name"><span class="pick-star">★</span> <a href="https://birdsblack.com" class="venue-name-link" target="_blank" rel="noopener">Four &amp; Twenty Blackbirds</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=439%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">439 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Open daily</div><p class="venue-desc">The pie shop that put Gowanus on the culinary map. Salted caramel apple, salty honey, black bottom oat: the seasonal menu changes but the quality doesn&#x27;t. One of the originals and still one of the best reasons to make a trip to 3rd Avenue.</p>
+  </div>
+  <div class="venue-card pick">
+    <div class="venue-header"><h3 class="venue-name"><span class="pick-star">★</span> <a href="https://www.labicyclettebakery.com/" class="venue-name-link" target="_blank" rel="noopener">La Bicyclette Bakery</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=305%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">305 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 8am</div><p class="venue-desc">A charming French bakery on Court Street with incredible quality bread and pastries.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.littleredkitchen.store/" class="venue-name-link" target="_blank" rel="noopener">Little Red Kitchen Bake Shop</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=603%204th%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">603 4th Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.8★</span></div><div class="venue-hours">Opens 9:30am</div><p class="venue-desc">Astonishingly good baked goods and really friendly service on the 4th Avenue corridor.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><span class="venue-name-plain">Lou &amp; Bev&#x27;s</span></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=129%20Atlantic%20Avenue%20Brooklyn%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">129 Atlantic Avenue</a></div><div class="venue-hours">Opening 2026</div><p class="venue-desc">Bakery by day, natural wine and pizza bar by night. From the team behind The Confidant. One of the more anticipated openings of the year for anyone who lives near Atlantic Avenue.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://mazzolabakerycafe.com" class="venue-name-link" target="_blank" rel="noopener">Mazzola Bakery</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=192%20Union%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">192 Union Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.6★</span></div><div class="venue-hours">Opens 7am</div><p class="venue-desc">Italian neighborhood bakery on Union Street known for its lard bread, which is second to none according to regulars. Great coffee too.</p>
+  </div>
+  <div class="venue-card pick">
+    <div class="venue-header"><h3 class="venue-name"><span class="pick-star">★</span> <a href="https://miasbrooklyn.com/" class="venue-name-link" target="_blank" rel="noopener">Mia&#x27;s Brooklyn Bakery</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=139%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">139 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Open daily, closes midnight</div><p class="venue-desc">Fantastic pastries, great coffee, and a backyard. Open late enough to be useful after dinner. Over 3,500 reviews tell you everything you need to know. One of Smith Street&#x27;s anchor spots.</p>
+  </div>
+  <div class="venue-card pick">
+    <div class="venue-header"><h3 class="venue-name"><span class="pick-star">★</span> <a href="https://www.instagram.com/monteleonesbakery355/" class="venue-name-link" target="_blank" rel="noopener">Pasticceria Monteleone BK</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=355%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">355 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens 8am, closes 9pm</div><p class="venue-desc">A Carroll Gardens institution carrying a wide variety of traditional Italian cookies, pastries, cakes, and gelato. The cakes are moist for days afterward. One of the longest-standing Italian bakeries on Court Street and still one of the best reasons to stop in.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.seaandsoilcoop.com/" class="venue-name-link" target="_blank" rel="noopener">Sea and Soil</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=388%20Atlantic%20Avenue%20Brooklyn%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">388 Atlantic Avenue, Boerum Hill</a></div><div class="venue-rating-line"><span class="venue-rating">5.0★</span></div><div class="venue-hours">Opens 11am</div><p class="venue-desc">Worker-owned bakery and cafe with a perfect rating. Such fresh bread and ingredients that reviewers can&#x27;t believe the vegan options taste this good. Relocated from President Street in fall 2025.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://sixteenmill.com/" class="venue-name-link" target="_blank" rel="noopener">Sixteen Mill Bakeshop</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=552%20Union%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">552 Union Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><div class="venue-hours">Opens 9am</div><p class="venue-desc">Window-service only, and it doesn&#x27;t matter. The baked goods are exceptional and the staff is friendly and kind. One of the neighborhood&#x27;s best morning stops.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.beardedbaker.com/" class="venue-name-link" target="_blank" rel="noopener">The Bearded Baker</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=8%20St%20Marks%20Place%20Brooklyn%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">8 St Marks Place</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens 9am</div><p class="venue-desc">Delicious baked goods, great coffee, and friendly service in a small neighborhood bakery.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.thechocolateroombrooklyn.com/" class="venue-name-link" target="_blank" rel="noopener">The Chocolate Room</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=269%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">269 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.5★</span></div><div class="venue-hours">Opens noon, closes 10pm</div><p class="venue-desc">Chocolate-focused dessert cafe on Court Street. Everything tastes incredibly fresh and rich without being overly sweet. A destination for anyone who takes chocolate seriously.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.time4bagels.com/" class="venue-name-link" target="_blank" rel="noopener">Time 4 Bagels</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=365%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">365 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens 6am</div><p class="venue-desc">Bagel shop on Smith Street. The everything bagel with scallion cream cheese and lox is the move.</p>
+  </div>
+</div>
+</section>
+<section id="wine-shops" class="section">
+<div class="section-header"><h2 class="section-title">Wine Shops</h2><span class="section-count">8</span></div>
+<div class="venue-list">
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://granadawinesandspirits.com/" class="venue-name-link" target="_blank" rel="noopener">Granada Wines and Spirits</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=117%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">117 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><p class="venue-desc">Family-owned wine and spirits shop on Smith Street. A 4.9 rating on nearly 500 reviews for a liquor store means people genuinely love it. Good selection, good prices, staff who know their stock.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.brooklynwineexchange.com/" class="venue-name-link" target="_blank" rel="noopener">Brooklyn Wine Exchange</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=138%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">138 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens 10am</div><p class="venue-desc">Unpretentious wine and spirits shop on Court Street with a warm atmosphere and delightful wine tastings. An inviting neighborhood bottle shop.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="http://www.courtstreetwines.com/" class="venue-name-link" target="_blank" rel="noopener">Carroll Gardens Wines &amp; Liquor</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=427%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">427 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.7★</span></div><div class="venue-hours">Opens 11am</div><p class="venue-desc">Old-school shop for wine and spirits on Court Street. Friendly service and a great selection. The kind of neighborhood wine shop that&#x27;s getting harder to find.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.gowanuswines.com/" class="venue-name-link" target="_blank" rel="noopener">Gowanus Wine Merchants</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=493%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">493 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><div class="venue-hours">Opens noon</div><p class="venue-desc">Great selection and knowledgeable, wonderful staff on 3rd Avenue. One of the best wine shop options in the core Gowanus area.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.gowanuswinestudio.com/" class="venue-name-link" target="_blank" rel="noopener">Gowanus Wine Studio &amp; Tasting Table</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=257%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">257 3rd Avenue</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><div class="venue-hours">Opens 1pm</div><p class="venue-desc">Wine tasting shop on 3rd Avenue that makes the whole experience accessible, fun, and inclusive. A good destination if you want to learn as much as shop.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://ilvignettofinewines.com/" class="venue-name-link" target="_blank" rel="noopener">Il Vignetto Fine Wine &amp; Spirits</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=145%20Union%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">145 Union Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><div class="venue-hours">Opens noon</div><p class="venue-desc">Fine wine shop on Union Street with a very knowledgeable owner and a great experience. A neighborhood gem.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://brooklynwine.com/" class="venue-name-link" target="_blank" rel="noopener">Scotto&#x27;s Wine Cellar</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=318%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">318 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.8★</span></div><div class="venue-hours">Opens 10:30am</div><p class="venue-desc">Local wine shop since 1934 on Court Street. Beautiful selection and excellent advice from a friendly staff. One of the longest-standing wine shops in Carroll Gardens and worth supporting for that alone.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.smithandvine.com" class="venue-name-link" target="_blank" rel="noopener">Smith &amp; Vine</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=317%20Smith%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">317 Smith Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.8★</span></div><div class="venue-hours">Opens 11am</div><p class="venue-desc">Unusual wines and liquor on Smith Street with great personal service and a staff that genuinely knows their product. A Smith Street staple for a reason.</p>
+  </div>
+</div>
+</section>
+<section id="specialty" class="section">
+<div class="section-header"><h2 class="section-title">Specialty Shops and Markets</h2><span class="section-count">8</span></div>
+<div class="venue-list">
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.caputosfinefoods.com/" class="venue-name-link" target="_blank" rel="noopener">Caputo&#x27;s Fine Foods</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=460%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">460 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.9★</span></div><div class="venue-hours">Check hours on Google</div><p class="venue-desc">Italian grocery store on Court Street carrying quality Italian products. A Carroll Gardens institution for stocking up on imported Italian goods.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><span class="venue-name-plain">Gowanus Marketplace</span></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=420%20Carroll%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">420 Carroll Street</a></div><p class="venue-desc">Neighborhood grocery on the ground floor of 420 Carroll, the first building from the Gowanus rezoning cycle. Fresh staples, prepared foods, and a useful stop for residents in the new waterfront buildings.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.courtstreetgrocers.com" class="venue-name-link" target="_blank" rel="noopener">Court Street Grocers</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=485%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">485 Court Street</a></div><div class="venue-hours">Mon–Sun 8am–6pm</div><p class="venue-desc">The original Carroll Gardens location of one of Brooklyn&#x27;s most-loved specialty grocery and sandwich shops, opened 2010. The Cubano — confit pork shoulder, heritage ham, Swiss, sour pickles, mayo, mustard on Sullivan Street stecca — is the move. About 70% of products sourced directly from producers. The Reuben and Italian Combo are equally serious.</p>
+  </div>
+  <div class="venue-card coming-soon">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://unionmarket.com" class="venue-name-link" target="_blank" rel="noopener">Union Market</a></h3> <span class="tag tag-coming">Coming Soon</span></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=532%20Union%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">532 Union Street</a></div><p class="venue-desc">The Brooklyn-born grocer known for fresh produce, curated local goods, and organic staples is bringing its largest location yet — 10,000 square feet — to the 499 President development on Union Street. A proper neighborhood grocery store, finally.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.staubitz.com/" class="venue-name-link" target="_blank" rel="noopener">Staubitz Market</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=222%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">222 Court Street</a></div><div class="venue-hours">Tue–Sat 8am–6:30pm, closed Sun–Mon</div><p class="venue-desc">Family-owned butcher shop on Court Street since 1917. One of the last of the old Italian-American market corridor. The kind of place where they know your order and have opinions about what cut you should use. Sam&#x27;s still gets its meat from here. That tells you everything.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://www.instagram.com/tavolabk" class="venue-name-link" target="_blank" rel="noopener">Tavola Italian Market</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=274%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">274 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">4.8★</span></div><p class="venue-desc">Italian market and cafe run by owner Jessica. Panini, imported pantry goods, and a small garden out back. Covers several needs at once: a quick lunch, a bottle of good olive oil, and a room that feels like it belongs somewhere else in the best possible way.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><span class="venue-name-plain">Martinez Grocery</span></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=370%20Court%20Street%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">370 Court Street</a></div><div class="venue-rating-line"><span class="venue-rating">5.0★</span></div><p class="venue-desc">Beloved bodega on Court Street with a big plant selection, a shop cat named Mars, and the Nelson sandwich. 5.0 on 22 reviews: a small count, a perfect score, and regulars who feel strongly.</p>
+  </div>
+  <div class="venue-card">
+    <div class="venue-header"><h3 class="venue-name"><a href="https://mercadocentralnyc.com/" class="venue-name-link" target="_blank" rel="noopener">Mercado Central</a></h3></div>
+    <div class="venue-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=252%203rd%20Avenue%20Brooklyn%20NY" class="venue-addr" target="_blank" rel="noopener">252 3rd Avenue</a></div><div class="venue-hours">Open daily</div><p class="venue-desc">Spanish specialty shop claiming the largest tinned fish selection in New York City. The back counter serves tapas, Spanish wine by the glass, and Alhambra on tap. Walk in for a copa and a tin, stay longer than you planned.</p>
+  </div>
+</div>
+</section>
+
+
+
+<div style="background:white; border:1px solid #e2ddd6; border-radius:12px; padding:24px 28px; text-align:center; margin-top:48px;">
+  <p style="font-family:'DM Sans',sans-serif; font-size:15px; color:#444; font-weight:300; margin:0;">Is your business missing from this guide? We review every submission.</p>
+  <a href="mailto:thegowanaut@gmail.com" style="display:inline-block; margin-top:14px; background:#2D9E8F; color:white; font-family:'DM Sans',sans-serif; font-size:14px; font-weight:600; padding:10px 24px; border-radius:100px; text-decoration:none;">Send us a note &rarr;</a>
+</div>
+
+<div class="cta-section">
+  <h2>Stay current on Gowanus</h2>
+  <p>Every opening, closing, and development update, delivered free every Saturday morning.</p>
+  <a href="https://thegowanaut.com" class="cta-btn">Subscribe to The Gowanaut &rarr;</a>
+  <div style="margin-top:16px; color:rgba(255,255,255,0.5); font-size:12px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase;">Free &middot; Weekly &middot; No spam</div>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 <a href="https://thegowanaut.com">The Gowanaut</a> &middot; Gowanus, Brooklyn &middot; <a href="mailto:thegowanaut@gmail.com">thegowanaut@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
